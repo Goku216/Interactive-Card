@@ -1,8 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
 
-/* */
+body {
+    background: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    position: relative;
+}
+
+/* left background */
+.left-image {
+    height: 100vh;
+    width: 30%;
+}
+.front-card {
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+    width: 447px;
+    height: 245px;
+}
+.card-logo {
+    z-index: 3;
+}
+.front-card-image {
+    position: absolute;
+}
+.front-card-details {
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    top: 7rem;
+    line-height: 1.3;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-digit {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.card-name {
+    align-self: flex-start;
+}
+.card-date {
+    align-self: flex-end;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
